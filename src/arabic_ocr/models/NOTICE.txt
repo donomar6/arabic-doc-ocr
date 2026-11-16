@@ -1,0 +1,49 @@
+Bundled OCR models
+==================
+
+The ONNX models and the character dictionary in this directory are
+redistributed unchanged from the RapidOCR model repository maintained by
+RapidAI (https://github.com/RapidAI/RapidOCR). They are ONNX conversions of
+the PP-OCRv4 models trained and released by the PaddleOCR project
+(https://github.com/PaddlePaddle/PaddleOCR).
+
+Both RapidOCR and PaddleOCR are licensed under the Apache License, Version 2.0.
+A copy of the license is in the file LICENSE next to this notice.
+
+Files
+-----
+
+ch_PP-OCRv4_det_infer.onnx
+    Text detection model (DBNet, PP-OCRv4 mobile). Language-agnostic.
+    Source path:  onnx/PP-OCRv4/det/ch_PP-OCRv4_det_mobile.onnx
+    SHA-256:      d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9
+
+arabic_PP-OCRv4_rec_infer.onnx
+    Arabic text recognition model (SVTR-LCNet + CTC, PP-OCRv4 mobile).
+    Source path:  onnx/PP-OCRv4/rec/arabic_PP-OCRv4_rec_mobile.onnx
+    SHA-256:      4a9011bef71687bb84288dc86ad2471bd5d37b717ddf672dd156f9e7a5601bac
+
+arabic_dict.txt
+    Character dictionary for the PP-OCRv4 recognition model (161 symbols).
+    Source path:  paddle/PP-OCRv4/rec/arabic_PP-OCRv4_rec_mobile/arabic_dict.txt
+
+arabic_PP-OCRv5_rec_infer.onnx
+    Arabic text recognition model (PP-OCRv5 mobile). Default recogniser.
+    Source path:  onnx/PP-OCRv5/rec/arabic_PP-OCRv5_rec_mobile.onnx
+    SHA-256:      c1192e632d0baa9146ae5b756a0e635e3dc63c1733737ebfd1629e87144e9295
+
+arabic_dict_v5.txt
+    Character dictionary for the PP-OCRv5 recognition model (747 symbols).
+    Source path:  paddle/PP-OCRv5/rec/arabic_PP-OCRv5_rec_mobile/ppocrv5_arabic_dict.txt
+
+Source repository
+-----------------
+
+ModelScope:   https://www.modelscope.cn/models/RapidAI/RapidOCR
+Hugging Face: https://huggingface.co/RapidAI/RapidOCR  (mirror)
+Downloaded:   2026-11-12
+
+Copyright (c) RapidAI and PaddlePaddle authors.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use these files except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0

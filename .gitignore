@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
+src/arabic_ocr/_vendor/onnxruntime/
+src/arabic_ocr/_vendor/licenses/
+.venv*/
